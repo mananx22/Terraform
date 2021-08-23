@@ -21,17 +21,11 @@ locals {
     
 }
 
-
-
-
 module "image" {
   source = "./image"
   for_each = local.deployment
   image_in = each.value.image
 }
-
-
-
 
 module "container" {
   source = "./container"
