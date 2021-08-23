@@ -1,9 +1,16 @@
 variable "image" {
     type = map
     default = {
+    
+    nodered = {
         dev = "nodered/node-red:latest"
         prod = "nodered/node-red:latest-minimal"
-    }
+     }
+    influxdb = {
+        dev = "influxdb:2.0.8"
+        prod = "influxdb:2.0.8"
+     }
+  }
 }
 
 variable "ext_port" {
