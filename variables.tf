@@ -10,6 +10,10 @@ variable "image" {
         dev = "influxdb:2.0.8"
         prod = "influxdb:2.0.8"
      }
+    grafana = {
+        dev = "grafana/grafana:main"
+        prod = "grafana/grafana:main"
+     }
   }
 }
 
